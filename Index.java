@@ -6,6 +6,7 @@ public class Index{
 	    System.out.println(ret);
     }
 
+    //demo 1
     private static int computeNum(int a,int b,int c){
 	    int ret = a + b + c;
 	    return ret;
