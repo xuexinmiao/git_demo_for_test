@@ -1,5 +1,4 @@
 public class Index{
-
     //main
     public static void main(String[] args){
 	    int num = computeNum(5,26,17);
