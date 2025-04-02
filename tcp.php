@@ -16,6 +16,5 @@ $server->on('Receive', function ($server, $fd, $reactor_id, $data) {
 $server->on('Close', function ($server, $fd) {
     echo "Client: Close.\n";
 });
-
 //启动服务器
 $server->start();
