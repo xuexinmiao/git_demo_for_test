@@ -6,7 +6,8 @@ $server->on('Connect', function ($server, $fd) {
 });
 
 $server->on('Receive', function ($server, $fd, $reactor_id, $data) {
-    sleep(10);
+    $server->send($fd, "aaa");
+    sleep(5);
     $server->send($fd, "Server: {$data}");
 });
 
