@@ -10,7 +10,6 @@ $server->on('Receive', function ($server, $fd, $reactor_id, $data) {
     sleep(5);
     $server->send($fd, "Server: {$data}");
 });
-
 $server->on('Close', function ($server, $fd) {
     echo "Client: Close.\n";
 });
